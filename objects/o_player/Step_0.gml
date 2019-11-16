@@ -5,17 +5,34 @@ right	= keyboard_check(vk_right);
 left	= keyboard_check(vk_left);
 up		= keyboard_check(vk_up);
 down	= keyboard_check(vk_down);
-up_release = keyboard_check_released(vk_up); // pour sauter plus ou moins haut
+up_release = keyboard_check_released(vk_up);   // pour sauter plus ou moins haut
+scr_shake = keyboard_check_pressed(vk_space);  // pour simuler un tremblement
+
 #endregion
 #region			 state machine
 switch (state) {
+#region          screen shake
+	case player.shake:
+		show_debug_message("NB Instances o_screenshakes : " + string(instance_number(o_screenshake)));
+		if (instance_number(o_screenshake) == 0) {
+		   instance_create_layer(0,0,"Player",o_screenshake);
+		} else {
+			state = player.moving;
+		}
+	break;
+#endregion
 #region		 deplacement joueur
+	
+	
 	case player.moving:
 		if (xspeed == 0) {
 			sprite_index = s_player_idle;
 		} else {
 			sprite_index = s_player_walk;
 		}
+		
+		// Ajout pour simuler le scrrenshake
+		if (scr_shake) { state = player.shake; }
 		
 		// verifier si le joueur touche le sol
 		if (!place_meeting(x, y + 1, o_solid)) { // le perso n'est pas sur le sol 
@@ -93,7 +110,7 @@ switch (state) {
 		if (down) {
 			state = player.moving;
 		}
-		else if (up) {
+		if (up) {
 			state = player.moving;
 			yspeed = jump_height;
 		}

@@ -14,7 +14,8 @@ enum player {
 	ledge_grab,
 	door,
 	hurt,
-	death
+	death,
+	shake // screen shaking
 }
 
 // etat du joueur au depart

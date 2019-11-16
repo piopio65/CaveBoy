@@ -63,11 +63,43 @@
             }
         },
         {
+            "Key": "33915841-0047-4e23-be8b-e18a6c9614b7",
+            "Value": {
+                "id": "3ba7facf-b459-4e22-9270-113f22ea2abd",
+                "resourcePath": "objects\\o_camera\\o_camera.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "3f630b36-023d-415c-a8c8-7a0cb16cb386",
             "Value": {
                 "id": "c2d8e842-47f3-48ec-b0d2-3e9363d489d8",
                 "resourcePath": "views\\3f630b36-023d-415c-a8c8-7a0cb16cb386.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "3fee9276-e1a0-4f23-bc81-83cb3663c2a3",
+            "Value": {
+                "id": "712b28ae-33e6-44f0-b60b-a8af9f955a1d",
+                "resourcePath": "objects\\o_ui\\o_ui.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "42d7b060-17b7-417d-a13e-90b1fa740f2f",
+            "Value": {
+                "id": "b019067c-f797-4c77-94cb-9dc59337e66b",
+                "resourcePath": "views\\42d7b060-17b7-417d-a13e-90b1fa740f2f.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "47cd3de3-815c-4ebc-8e67-6c92fe4d7946",
+            "Value": {
+                "id": "f65a19ea-c4e8-48a6-9148-625dd28068d5",
+                "resourcePath": "objects\\o_screenshake\\o_screenshake.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -183,6 +215,14 @@
             }
         },
         {
+            "Key": "8107b8cc-fa20-47ff-8d78-8a52187f32a0",
+            "Value": {
+                "id": "3824b9ac-bd41-40b1-8ed3-7c2608eb059a",
+                "resourcePath": "sprites\\s_fps\\s_fps.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8717daa8-c998-4517-aa0b-ecefc1a8b42d",
             "Value": {
                 "id": "9f8af940-3aef-4ef0-b267-29f11f9a92e6",
@@ -244,6 +284,14 @@
                 "id": "f62910ba-e64e-49ba-9275-6b658fc58da2",
                 "resourcePath": "fonts\\f_title\\f_title.yy",
                 "resourceType": "GMFont"
+            }
+        },
+        {
+            "Key": "a9188620-a624-4a5a-83ae-a1b53faf038b",
+            "Value": {
+                "id": "5f43aa12-474b-4cee-ac61-a27f2999131e",
+                "resourcePath": "options\\linux\\options_linux.yy",
+                "resourceType": "GMLinuxOptions"
             }
         },
         {
@@ -364,6 +412,14 @@
                 "id": "49a4725a-709a-44a1-bb31-fd9279ad8b11",
                 "resourcePath": "sprites\\s_player_idle\\s_player_idle.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "f418569b-3bdd-4706-a0e4-364317f54032",
+            "Value": {
+                "id": "7839a493-490a-4a09-b16c-7c04757c837a",
+                "resourcePath": "options\\mac\\options_mac.yy",
+                "resourceType": "GMMacOptions"
             }
         },
         {
