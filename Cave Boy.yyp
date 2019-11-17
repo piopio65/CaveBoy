@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "2e3a10c3-7ffe-48af-8a77-9b14df91632d",
+            "Value": {
+                "id": "241b8142-96db-4f03-8bff-ba5a704aedae",
+                "resourcePath": "sprites\\s_village\\s_village.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2fad96e2-0306-4a41-ab21-a0aa47941e05",
             "Value": {
                 "id": "84a20d6c-37f3-45b5-bc07-0fc30a0b394e",
@@ -228,6 +236,14 @@
                 "id": "9f8af940-3aef-4ef0-b267-29f11f9a92e6",
                 "resourcePath": "sprites\\s_dirt\\s_dirt.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "89f5565d-9d67-498a-8e73-b6e679366014",
+            "Value": {
+                "id": "ccaeea8a-2eef-4e22-ad1e-c17ea748266f",
+                "resourcePath": "tilesets\\t_village\\t_village.yy",
+                "resourceType": "GMTileSet"
             }
         },
         {
