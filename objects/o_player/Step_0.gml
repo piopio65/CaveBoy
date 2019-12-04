@@ -3,7 +3,9 @@
 #region			 set up controls player
 right	= keyboard_check(vk_right);
 left	= keyboard_check(vk_left);
-up		= keyboard_check(vk_up);
+//up	= keyboard_check(vk_up);
+// modif par moi
+up		= keyboard_check_pressed(vk_up);
 down	= keyboard_check(vk_down);
 up_release = keyboard_check_released(vk_up); // pour sauter plus ou moins haut
 #endregion
@@ -19,7 +21,7 @@ switch (state) {
 		
 		// verifier si le joueur touche le sol
 		if (!place_meeting(x, y + 1, o_solid)) { // le perso n'est pas sur le sol 
-												 // il est en train de tomber
+			on_floor = false;									 // il est en train de tomber
 			yspeed += gravity_acceleration;
 			sprite_index = s_player_jump;
 			image_index = (yspeed > 0);
@@ -30,7 +32,7 @@ switch (state) {
 			}
 		} else { // le perso est au sol
 			yspeed = 0;
-			
+			on_floor = true;
 			// Code du saut, on est au sol
 			if (up) {
 				yspeed = jump_height;
@@ -101,7 +103,14 @@ switch (state) {
 #endregion
 #region		 porte de sortie
 	case player.door:
-		
+	// Fade out
+	sprite_index = s_player_exit;
+	if (image_alpha >= 0) {
+		image_alpha -= .05;
+	} else {
+		room_goto_next();
+		//state = player.moving;
+	}
 	break;
 #endregion
 #region		 joueur touché

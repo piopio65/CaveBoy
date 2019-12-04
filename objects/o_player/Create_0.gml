@@ -6,7 +6,8 @@ acceleration = 1;
 gravity_acceleration = 0.5;
 jump_height = -9;
 grab_width = 18;
-
+// ajout par moi
+on_floor = false;
 
 // player state machines
 enum player {
