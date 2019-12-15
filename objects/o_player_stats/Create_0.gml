@@ -1,6 +1,6 @@
 /// @description  Initialisation variables
-hp = 3;
-max_hp = 3;
+hp = 10;
+max_hp = 10;
 sapphires = 0;
 
 mus_title = noone;
