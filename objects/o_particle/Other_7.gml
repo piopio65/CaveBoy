@@ -1,3 +1,3 @@
-/// @description destroy particle of lava
+/// @description destroy particle
 instance_destroy();
 
